@@ -1,0 +1,124 @@
+header  {
+    height: 50px;
+    font-size: 25px;
+    margin-top: 9px;
+    width: auto;
+    background-color: ghostwhite;
+    box-shadow: 2px black;
+    font-family: sans-serif;
+    border-radius: 3px;
+}
+
+header img  {
+    float: left;
+    margin-left: 560px;
+}
+
+header p    {
+    margin-top: 9px;
+    float: right;
+    margin-right: 560px;
+}
+
+img {
+    border-radius: 3px;
+}
+
+body    {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.conteudo   {
+    margin-left: 150px;
+    height: 400px;
+    width: 710px;
+    background-color: ghostwhite;
+    float: left;
+    border-radius: 3px;
+}
+
+.form   {
+    margin-top: 13px;
+    margin-left: 870px;
+    position: absolute;
+    margin-right: 140px;
+    height: 400px;
+    width: 330px;
+    background-color: aquamarine;
+    border-radius: 3px;
+}
+
+footer  {
+    display: inline-block;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 1050px;
+    background-color: ghostwhite;
+    border-radius: 3px;
+}
+
+footer img  {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.slider {
+    display: block;
+    margin-left: -20px;
+    margin-top: 60px;
+    position: relative;
+    height: 290px;
+    width: 450px;
+}
+
+.slider li  {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input   {
+    display: none;
+}
+
+.slider label   {
+    background-color: black;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label   {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label   {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label   {
+    left: 70px;
+}
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img    {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
